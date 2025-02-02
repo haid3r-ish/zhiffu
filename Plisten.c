@@ -20,7 +20,7 @@ void pinListen(void *pvParameters) {
             // Here check the prvious and see how the state of count change
             if(count == 1 && pCount == 0 || count == 0 && pCount == 1){
               // From count 0 to 1 OR From count 1 to 0 (SEND INTERUPT)
-              xTaskNotifyGive(InterptNotifHandle);
+              // xTaskNotifyGive(InterptNotifHandle);
             }
           }
         }
